@@ -79,10 +79,10 @@
         </executions>
       </plugin>-->
 
-      <!--<plugin>
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>appassembler-maven-plugin</artifactId>
-        <version>1.8.1</version>
+        <version>1.9</version>
         <executions>
           <execution>
             <phase>compile</phase>
@@ -112,22 +112,22 @@
               <jvmSettings>
                 <initialMemorySize>256m</initialMemorySize>
                 <maxMemorySize>256m</maxMemorySize>
-                &lt;!&ndash;<maxStackSize>128k</maxStackSize>&ndash;&gt;
+                <!--<maxStackSize>128k</maxStackSize>-->
                 <systemProperties>
                   <systemProperty>java.net.preferIPv4Stack=true</systemProperty>
-                  &lt;!&ndash;add jconsole support&ndash;&gt;
-&lt;!&ndash;                  <systemProperty>com.sun.management.jmxremote</systemProperty>
+                  <!--add jconsole support-->
+<!--                  <systemProperty>com.sun.management.jmxremote</systemProperty>
                   <systemProperty>com.sun.management.jmxremote.port=9010</systemProperty>
                   <systemProperty>com.sun.management.jmxremote.local.only=false</systemProperty>
                   <systemProperty>com.sun.management.jmxremote.authenticate=false</systemProperty>
                   <systemProperty>com.sun.management.jmxremote.ssl=false</systemProperty>
-                  <systemProperty>java.rmi.server.hostname=10.1.72.155</systemProperty>&ndash;&gt;
+                  <systemProperty>java.rmi.server.hostname=10.1.72.155</systemProperty>-->
                 </systemProperties>
               </jvmSettings>
             </program>
           </programs>
         </configuration>
-      </plugin>-->
+      </plugin>
 
     </plugins>
   </build>
